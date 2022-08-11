@@ -4,21 +4,20 @@ import illustrationImg from "../assets/images/illustration.svg";
 import logoImg from "../assets/images/logo.svg";
 
 import { Button } from "../components/Button";
-import { auth, firebase } from "../services/firebase";
+import { useAuth } from "../hooks/useAuth";
 import "../styles/auth.scss";
 
 
 export function Home() {
     const navigate = useNavigate();
+    const { user, signInWithGoogle } = useAuth();
 
-    function handleCreateRoom() {
-        const provider = new firebase.auth.GoogleAuthProvider();
+    async function handleCreateRoom() {
+        if (!user) {
+            await signInWithGoogle()
+        }
 
-        auth.signInWithPopup(provider).then(result => {
-            console.log(result);
-
-            navigate("/rooms/new")
-        });
+        navigate("/rooms/new")
     }
 
     return (

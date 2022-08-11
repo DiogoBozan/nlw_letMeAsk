@@ -1,22 +1,20 @@
-import { createContext, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { Home } from "./pages/Home";
 import { NewRoom } from "./pages/NewRoom";
 
-export const TestContext = createContext({} as any);
+import { AuthContextProvider } from "./contexts/AuthContext";
 
 function App() {
-  const [value, setValue] = useState("heyyyyy");
 
   return (
     <BrowserRouter>
-      <TestContext.Provider value={{ value, setValue }}>
+      <AuthContextProvider>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/rooms/new" element={<NewRoom />} />
         </Routes>
-      </TestContext.Provider>
+      </AuthContextProvider>
     </BrowserRouter>
   );
 }
