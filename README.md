@@ -2,6 +2,9 @@
 LetMeAsk is a question and answer platform with private rooms that can use a password to access the room, the room administrator can see the questions as read or delete them. The project can be used by streamers or speakers at events to create anonymous question rooms.
 This project was developed with the help of the @RocketSeat course.
 
+![image](https://user-images.githubusercontent.com/64026232/186936118-398b105a-6ded-4160-9b71-0238045b7148.png)
+
+
 # 🚀 Stack Used:
 - React.js
 - Typescript
