@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useState } from "react"
+import { FormEvent, useState } from "react"
 import { useParams } from "react-router-dom"
 
 import logoImg from "../assets/images/logo.svg"
@@ -15,7 +15,6 @@ type RoomParams = {
     id: string;
 }
 
-// params.id as string
 
 export function Room() {
     const { user } = useAuth();
