@@ -1,25 +1,48 @@
-## Figma:
+# 💻 Project
+LetMeAsk is a question and answer platform with private rooms that can use a password to access the room, the room administrator can see the questions as read or delete them. The project can be used by streamers or speakers at events to create anonymous question rooms.
+This project was developed with the help of the @RocketSeat course.
+
+# 🚀 Stack Used:
+- React.js
+- Typescript
+- CSS - SCSS
+- firebase Realtime DB
+
+- DEPLOY USED: FIREBASE
+
+You can see on: https://letmeask-fb7d9.web.app/
+
+## How to use?
+Download this repositorie and acess the directory.
+
+### Run the next command:
+##### To install dependencies and node_modules
+```bash
+yarn install
+```
+##### To start the application:
+```bash
+yarn start
+```
+
+## Author
+- [@DiogoBozan](https://github.com/DiogoBozan)
+
+
+<!--
+
+## FIGMA:
+
 https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask?node-id=0%3A1
 
-## COMANDOS:
+
+## ATALHO UBUNTO:
+
+explorer.exe . => abre a pasta de origem no windows
+
+## COMANDOS EXTRAS:
 alt + shift + o => limpar importes
 
-## CSS COM SASS:
-yarn add node-sass@^5.0.0
-
-yarn create react-app nlw_letmeask_react --template typescript
-
-# CURIOSIDADES:
-usar o HTML dentro do JS, se chama = JSX - JAVASCRIPT XML
-
-# obs:
-caso de algum problema com minhas rotas, eu preciso add o comando abaixo como dependencias:
-yarn add @types/react-router-dom -D
-
-
-
-# START PROJECT
-### `yarn start`
 
 # LINK FIREBASE: 
 https://console.firebase.google.com/u/0/project/letmeask-fb7d9/database/letmeask-fb7d9-default-rtdb/data
@@ -36,7 +59,4 @@ https://console.firebase.google.com/u/0/project/letmeask-fb7d9/database/letmeask
 [X] Don't allow duplicated likes from the same author;
 [X] Don't allow user to like own questions;
 
-
-
-
-AULA Nº 4 - VER SOBRE O STYLE CSS 12MIN PRA FRENTE
+ -->
